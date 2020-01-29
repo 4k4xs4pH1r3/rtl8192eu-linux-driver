@@ -37,13 +37,13 @@ from source when the kernel is upgraded (for example using your package manager)
     * for normal Linux systems
 
     ```shell
-    $ sudo apt-get install git linux-headers-generic build-essential dkms;
+    $ sudo apt-get install git linux-headers-generic build-essential dkms -y
     ```
 
     * for Raspberry Pi
 
     ```shell
-    $ sudo apt-get install git raspberrypi-kernel-headers build-essential dkms;
+    $ sudo apt-get install git raspberrypi-kernel-headers build-essential dkms -y
     ```
 
 2. Clone this repository and change your directory to cloned path.
@@ -52,7 +52,7 @@ from source when the kernel is upgraded (for example using your package manager)
     $ git clone https://github.com/Mange/rtl8192eu-linux-driver;
     ```
     ```shell
-    $ cd rtl8192eu-linux-driver;
+    $ cd rtl8192eu-linux-driver
     ```
 
 3. The Makefile is preconfigured to handle most x86/PC versions. However, if you are compiling for something other than an intel x86 architecture, you need to first select the platform.
